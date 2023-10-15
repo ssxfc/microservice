@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
+import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
@@ -40,6 +41,7 @@ public class SuperEntity<T extends Model> extends Model {
     @TableField(value = "created_by")
     private Date createdBy;
 
+    @JsonAlias
     @TableField(value = "updated_by")
     private Date updatedBy;
 }

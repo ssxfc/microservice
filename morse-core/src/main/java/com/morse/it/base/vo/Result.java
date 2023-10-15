@@ -48,17 +48,4 @@ public class Result<T> {
      */
     private Result() {
     }
-
-    /**
-     * 通过操作标识及提示信息构建结果对象
-     *
-     * @param success
-     * @param <T>
-     * @return
-     */
-    private static <T> Result<T> createWithSuccessFlag(int success) {
-        Result result = new Result();
-        result.setSuccess(success);
-        return result;
-    }
 }

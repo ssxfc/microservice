@@ -3,26 +3,16 @@ package com.morse.it.base.vo;
 import lombok.Data;
 
 /**
- * PageVO  用于分页
+ * PageInfo 分页对象
  *
- * @author: 陌溪
- * @create: 2019-12-03-22:38
+ * @Author zhangwenwu
+ * @Date 2023/10/14 23:53
+ * @Version 1.8
  */
 @Data
 public class PageInfo<T> {
-
-    /**
-     * 关键字
-     */
-    private String keyword;
-
-    /**
-     * 当前页
-     */
+    // 当前页
     private Long currentPage;
-
-    /**
-     * 页大小
-     */
+    // 页数
     private Long pageSize;
 }

@@ -11,13 +11,4 @@ import java.util.Map;
  * @Version 1.8
  */
 public class SuperController {
-
-    /**
-     * 获取一个map
-     * @return
-     */
-    public static Map<String, Object> getMap() {
-        Map<String, Object> map = new HashMap<String, Object>();
-        return map;
-    }
 }
