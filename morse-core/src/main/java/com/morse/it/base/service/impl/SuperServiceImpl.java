@@ -1,4 +1,4 @@
-package com.morse.it.base.serviceImpl;
+package com.morse.it.base.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.morse.it.base.mapper.SuperMapper;

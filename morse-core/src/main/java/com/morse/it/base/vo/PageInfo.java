@@ -12,7 +12,7 @@ import lombok.Data;
 @Data
 public class PageInfo<T> {
     // 当前页
-    private Long currentPage;
+    private Long pageIndex;
     // 页数
     private Long pageSize;
 }

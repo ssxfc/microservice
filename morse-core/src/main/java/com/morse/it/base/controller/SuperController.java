@@ -10,5 +10,6 @@ import java.util.Map;
  * @Date 2023/10/14 23:53
  * @Version 1.8
  */
-public class SuperController {
+public interface SuperController<S> {
+    S getBaseService();
 }

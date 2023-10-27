@@ -10,6 +10,7 @@
     <version>1.0.0</version>
     <modules>
         <module>morse-core</module>
+        <module>core-test</module>
     </modules>
 
     <properties>
