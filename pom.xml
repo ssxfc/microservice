@@ -201,4 +201,15 @@
             </resource>
         </resources>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>rdc-releases</id>
+            <url>https://packages.aliyun.com/maven/repository/2431068-release-XAxSsK/</url>
+        </repository>
+        <snapshotRepository>
+            <id>rdc-snapshots</id>
+            <url>https://packages.aliyun.com/maven/repository/2431068-snapshot-pj6Xpy/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
