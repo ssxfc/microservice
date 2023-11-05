@@ -124,9 +124,9 @@
         </profile>
         <!-- 生产环境 -->
         <profile>
-            <id>pro</id>
+            <id>prod</id>
             <properties>
-                <env>pro</env>
+                <env>prod</env>
             </properties>
         </profile>
     </profiles>
