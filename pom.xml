@@ -5,12 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.microservice.it</groupId>
-    <artifactId>common</artifactId>
+    <artifactId>parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
     <modules>
-        <module>morse-core</module>
-        <module>core-test</module>
+        <module>restful</module>
     </modules>
 
     <properties>
