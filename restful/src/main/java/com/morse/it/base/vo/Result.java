@@ -45,13 +45,12 @@ public class Result<T> {
     }
 
     public static <T> Result success(String msg, T data){
-        return new Result<T>(ResultCode.FAILED,msg, data,true);
+        return new Result<T>(ResultCode.SUCCESS,msg, data,true);
     }
 
     public static <T> Result success(ResultCode resultCode, T data){
         return new Result<T>(resultCode, resultCode.getMsg(), data,true);
     }
-
 
     public static  <T> Result fail(){
         return new Result<T>(ResultCode.FAILED,ResultCode.FAILED.getMsg(), null,false);
@@ -72,6 +71,4 @@ public class Result<T> {
     public static <T> Result fail(ResultCode resultCode, T data){
         return new Result<T>(resultCode, resultCode.getMsg(), data,false);
     }
-
-
 }

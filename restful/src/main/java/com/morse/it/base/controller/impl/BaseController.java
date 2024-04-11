@@ -1,6 +1,8 @@
 package com.morse.it.base.controller.impl;
 
 import com.morse.it.base.controller.SuperController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.annotation.Resource;
 
@@ -10,7 +12,7 @@ import javax.annotation.Resource;
  * @Version 1.8
  */
 public class BaseController<S> implements SuperController<S> {
-    @Resource
+    @Autowired
     private S baseService;
 
     @Override

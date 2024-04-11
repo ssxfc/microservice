@@ -1,9 +1,9 @@
 package com.morse.it.base.controller.impl;
 
-import com.morse.it.base.controller.SuperController;
 import com.morse.it.base.entity.SuperEntity;
 import com.morse.it.base.service.SuperService;
 import com.morse.it.base.vo.Result;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 public class SaveController<S extends SuperService,T extends SuperEntity> extends BaseController<S> {
 
     @PostMapping("/save")
-    public Result<T> save(@RequestBody T t){
+    public Result<T> save(@Validated @RequestBody T t){
         S s = this.getBaseService();
         boolean saved = s.save(t);
         if(! saved){

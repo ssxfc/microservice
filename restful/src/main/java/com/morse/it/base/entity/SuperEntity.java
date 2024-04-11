@@ -3,11 +3,10 @@ package com.morse.it.base.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
-import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
-import java.time.LocalDateTime;
 import java.util.Date;
 
 /**
@@ -24,21 +23,21 @@ public class SuperEntity{
     @TableId(value = "id", type = IdType.AUTO)
     private String id;
 
+    @JsonIgnore
     @TableField(value = "del_flag")
     private int delFlag;
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @TableField(value = "created_at")
-    private LocalDateTime createdAt;
+    private Date createdAt;
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @TableField(value = "updated_at")
     private Date updatedAt;
 
     @TableField(value = "created_by")
-    private Date createdBy;
+    private String createdBy;
 
-    @JsonAlias
     @TableField(value = "updated_by")
-    private Date updatedBy;
+    private String updatedBy;
 }
